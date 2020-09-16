@@ -1,0 +1,393 @@
+@import 'reset';
+@import 'typography';
+
+body {
+  font-family: 'GT Walsheim Pro', sans-serif;
+  background-color: rgba(245, 244, 241, 0.25);
+
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 0.875rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  backdrop-filter: blur(12px) saturate(100%);
+}
+
+article {
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.colorful {
+  background: linear-gradient(
+      81.23deg,
+      #5c6ae4 -3.32%,
+      rgba(196, 196, 196, 0) 153.75%
+    ),
+    linear-gradient(351.21deg, #ffd771 0%, rgba(255, 215, 113, 0) 122.07%),
+    linear-gradient(346.2deg, #c84c4c -28.1%, #c84c4c 109.05%);
+}
+
+.space {
+  width: 100%;
+  height: 4rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  padding: 1.25rem 0;
+  margin-right: auto;
+}
+
+.member {
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.avatar {
+  width: 1.75rem;
+  height: 1.75rem;
+
+  &:not(:last-of-type) {
+    margin-right: -0.25rem;
+  }
+
+  .you {
+    width: 100%;
+    line-height: 1.75rem;
+    border-radius: 50%;
+    background-color: #995cbf;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card {
+    display: none;
+  }
+}
+
+.hiring {
+  &__btn {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &--mobile {
+  }
+}
+
+//----
+
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: #4c5dc1;
+  min-height: 70vh;
+  color: #ffffff;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  margin-bottom: 6rem;
+
+  h1 {
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.25rem;
+  }
+
+  img {
+    max-width: 125%;
+    margin-bottom: 2rem;
+  }
+}
+
+.pen,
+.lightning {
+  display: none;
+}
+
+//----
+.introduction {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+    background: linear-gradient(146deg, #5c6ae4, #a14ece);
+    color: #5c6ae4;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.1rem;
+  }
+
+  p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg {
+    order: -1;
+    border-radius: 2rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 8rem;
+  }
+}
+
+.your-calendar {
+  .cabinet {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .using-pc {
+    width: 70%;
+    position: absolute;
+    bottom: -25%;
+    right: 0;
+  }
+}
+
+.your-meetings {
+  h2 {
+    // background: linear-gradient(219deg, #e45c5c, #a14ece);
+  }
+
+  .bg {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    margin-top: 3rem;
+
+    img {
+      position: absolute;
+    }
+  }
+
+  .sky {
+    width: 24%;
+    left: 1.25rem;
+    top: -25%;
+  }
+
+  .castle {
+    width: 105%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.we-are-hiring {
+  margin-bottom: 22rem;
+
+  section {
+    background-color: #ffffff;
+    padding: 0 2.5rem;
+    text-align: center;
+    border-radius: 2rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-family: 'GT America Standard', sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    background-color: #5a5eb9;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    align-self: center;
+  }
+}
+
+.join {
+  padding: 2.5rem 1.5rem;
+  border-radius: 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'GT America Standard', sans-serif;
+    margin-bottom: 1.25rem;
+  }
+
+  form {
+    * {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border: none;
+
+      border-radius: 0.75rem;
+      margin-bottom: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-family: inherit;
+      color: inherit;
+    }
+
+    input {
+      background-color: rgba(0, 0, 0, 0.3);
+      outline: 0;
+      border: 2px solid transparent;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      &:focus {
+        border: 2px solid #8c98ff;
+      }
+    }
+
+    button {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.febby-group {
+  width: 100%;
+  height: 20rem;
+  position: absolute;
+  left: 0;
+  top: -22.5rem;
+
+  &__people {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+  }
+
+  &__shoe {
+    width: 4.5rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 2rem;
+  }
+
+  &__pencil {
+    width: 4.5rem;
+    position: absolute;
+    top: 0;
+    left: 9rem;
+  }
+
+  &__box {
+    width: 4rem;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+
+  &__ball {
+    width: 6rem;
+    position: absolute;
+    top: 4.5rem;
+    right: -1.25rem;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  .earth {
+    display: inline-block;
+    position: relative;
+
+    span {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    opacity: 0.5;
+
+    > li:not(:last-of-type) {
+      margin-right: 1.25rem;
+    }
+  }
+}
+
+@import 'rwd';

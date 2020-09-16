@@ -1,0 +1,157 @@
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  p {
+    width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hiring {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  .pen {
+    display: block;
+    position: absolute;
+    width: 10rem;
+    right: -2%;
+    bottom: 27%;
+  }
+
+  .lightning {
+    display: block;
+    position: absolute;
+    left: -11%;
+    bottom: 3%;
+
+    img:first-of-type {
+      width: 15rem;
+      height: auto;
+    }
+
+    img:last-of-type {
+      width: 8rem;
+      position: absolute;
+      left: 4.5rem;
+      bottom: -3.5rem;
+    }
+  }
+
+  .introduction {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .bg {
+    display: flex;
+    flex: 0 0 50%;
+  }
+
+  .your-calendar {
+    margin-bottom: 10rem;
+
+    .bg {
+      height: 35rem;
+      margin: 0;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .cabinet {
+      margin: auto;
+    }
+
+    .using-pc {
+      right: -7.5rem;
+      bottom: 12%;
+    }
+  }
+
+  .your-meetings {
+    margin-bottom: 3rem;
+
+    .content {
+      flex: 1;
+      order: -1;
+    }
+
+    .bg {
+      height: 35rem;
+      margin: 0;
+    }
+
+    .sky {
+      top: -9%;
+      right: auto;
+      left: -13%;
+    }
+
+    .castle {
+      width: 125%;
+      transform: translateY(-50%);
+      left: -32%;
+    }
+
+    .mission {
+      width: 78%;
+      margin: 8rem auto 0;
+    }
+  }
+
+  .febby-group {
+    width: 27rem;
+    top: -25rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__people {
+      left: 1.5rem;
+    }
+
+    &__shoe {
+      left: 3rem;
+    }
+
+    &__pencil {
+      left: 11.5rem;
+    }
+
+    &__box {
+      right: 5rem;
+    }
+  }
+
+  .join {
+    padding: 4rem 9.5rem;
+    text-align: left;
+
+    p {
+      width: 100%;
+    }
+
+    form {
+      display: flex;
+
+      input {
+        flex-basis: 84%;
+        margin-right: 2%;
+      }
+
+      button {
+        flex-basis: 14%;
+      }
+    }
+  }
+}
